@@ -320,3 +320,5 @@ except ImportError:
     pass
 else:
     set_dynamic_settings(globals())
+
+SECRET_KEY = "123"
