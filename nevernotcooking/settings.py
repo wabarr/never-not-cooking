@@ -90,7 +90,7 @@ USE_MODELTRANSLATION = False
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = [".nevernotcooking.com"]
+ALLOWED_HOSTS = []
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -320,5 +320,3 @@ except ImportError:
     pass
 else:
     set_dynamic_settings(globals())
-
-SECRET_KEY = "123"
