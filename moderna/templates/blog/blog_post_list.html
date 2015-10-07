@@ -58,6 +58,7 @@
     {% endblock %}
     </p>
 {% else %}
+    {% comment %}
     {% if page %}
     {% block blog_post_list_pagecontent %}
     {% if page.get_content_model.content %}
@@ -67,6 +68,7 @@
     {% endif %}
     {% endblock %}
     {% endif %}
+    {% endcomment %}
 {% endif %}
 
 {% for blog_post in blog_posts.object_list %}
